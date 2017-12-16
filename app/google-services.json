@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "384606323218",
+    "firebase_url": "https://alkosh-fbb2c.firebaseio.com",
+    "project_id": "alkosh-fbb2c",
+    "storage_bucket": "alkosh-fbb2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384606323218:android:8901b2cdcab4560d",
+        "android_client_info": {
+          "package_name": "com.example.sarah.alkosh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384606323218-50ds9rc873e4mmcp7j7d018l90jecv3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sarah.alkosh",
+            "certificate_hash": "96a09c80b12fb9ab50ab816931142f9165b9ae73"
+          }
+        },
+        {
+          "client_id": "384606323218-io7m7as1qr2e00535nmdp5i8csufgq2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sarah.alkosh",
+            "certificate_hash": "c7e3513ef2a4cb3f13f5af5bf68082eefcadd775"
+          }
+        },
+        {
+          "client_id": "384606323218-qasd55289kionv8ig682igddqk11esfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdEn9PQKlTMwQWKCBGGjud85Noy9uzlos"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384606323218-qasd55289kionv8ig682igddqk11esfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

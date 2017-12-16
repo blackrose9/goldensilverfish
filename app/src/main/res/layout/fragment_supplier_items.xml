@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/hoodiebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editact"
+            app:srcCompat="@drawable/hoodie1" />
+
+        <ImageButton
+            android:id="@+id/shirtbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editact"
+            app:srcCompat="@drawable/shirt" />
+
+
+        <ImageButton
+            android:id="@+id/cupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editact"
+            app:srcCompat="@drawable/cup" />
+
+    </android.support.v7.widget.GridLayout>
+
+
+
+
+</RelativeLayout>
