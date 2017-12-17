@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.sarah.alkosh.EditImage.EditActivity;
+import com.example.sarah.alkosh.EditImage.EditerActivity;
 import com.example.sarah.alkosh.HomeFragment;
 import com.example.sarah.alkosh.R;
 import com.example.sarah.alkosh.model.Item;
@@ -38,9 +38,9 @@ public class SupplierItemsFragment extends Fragment {
     RecyclerView itemList;
     DatabaseReference mDatabase;
 
-    ImageButton editact;
-    ImageButton editacth;
-    ImageButton editacts;
+    ImageButton editHoodie;
+    ImageButton editCup;
+    ImageButton editShirt;
 
 
     @Nullable
@@ -52,36 +52,54 @@ public class SupplierItemsFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_supplier_items, container, false);
 
-        editact = (ImageButton)view.findViewById(R.id.hoodiebtn);
-        editacth = (ImageButton)view.findViewById(R.id.cupbtn);
-        editacts = (ImageButton)view.findViewById(R.id.shirtbtn);
-        editact.setOnClickListener(new View.OnClickListener() {
+        editHoodie = (ImageButton)view.findViewById(R.id.hoodiebtn);
+        editCup = (ImageButton)view.findViewById(R.id.cupbtn);
+        editShirt = (ImageButton)view.findViewById(R.id.shirtbtn);
+
+
+        editHoodie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hoodie1);
-                Bitmap bitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.cup);
-                Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.shirt);
+                Intent intent = new Intent(getActivity(), EditerActivity.class);
+                intent.putExtra("item", "Hoodie");
+                startActivity(intent);
 
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG,100, byteArrayOutputStream);
-                byte[] byteArray = byteArrayOutputStream.toByteArray();
+            }
+        });
 
-                Intent intent = new Intent(getActivity(), EditActivity.class);
-                intent.putExtra("hoodie", byteArray);
-                intent.putExtra("cup", byteArray);
-                intent.putExtra("shirt", byteArray);
+        editCup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity(), EditerActivity.class);
+                intent.putExtra("item", "Cup");
+                startActivity(intent);
+
+            }
+        });
+
+        editShirt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getActivity(), EditerActivity.class);
+                intent.putExtra("item", "Shirt");
                 startActivity(intent);
 
             }
         });
 
 
+
+
+
+
         return view;
     }
 //
 //    public void editact(View view){
-//        Intent intent = new Intent(SupplierItemsFragment.this.getActivity(), EditActivity.class);
+//        Intent intent = new Intent(SupplierItemsFragment.this.getActivity(), EditerActivity.class);
 //        startActivity(intent);
 //    }
 

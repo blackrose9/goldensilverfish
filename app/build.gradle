@@ -1,7 +1,13 @@
 apply plugin: 'com.android.application'
 
+//apply plugin: 'com.neenbedankt.android-apt'
+
+//apply plugin: 'com.neenbedankt.android-apt'
+
+
 android {
     compileSdkVersion 26
+
     defaultConfig {
         applicationId "com.example.sarah.alkosh"
         minSdkVersion 18
@@ -9,6 +15,17 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
+        multiDexEnabled = true
+
+
+
+    }
+    /* Set Java Language level to Java 1.7+ */
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
     buildTypes {
         release {
@@ -25,10 +42,14 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:11.0.4'
     implementation 'com.google.firebase:firebase-database:11.0.4'
     implementation 'com.google.firebase:firebase-storage:11.0.4'
+    implementation 'com.snatik:storage:2.1.0'
+    implementation 'com.sromku:simple-storage:1.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-
+    implementation 'ly.img.android:photo-editor-sdk:5.0.8'
+    annotationProcessor 'ly.img.android:build-processor:5.0.8'
+    implementation  'com.android.support:multidex:1.0.1'
 
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
