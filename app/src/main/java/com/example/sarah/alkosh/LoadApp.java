@@ -14,7 +14,7 @@ import com.sromku.simple.storage.SimpleStorage;
 import ly.img.android.PESDK;
 
 /**
- * Created by clive on 17/12/17.
+ * Created by Sarah on 17/12/17.
  */
 
 public class LoadApp extends MultiDexApplication {

@@ -27,7 +27,7 @@ import ly.img.android.ui.activities.PhotoEditorBuilder;
 import ly.img.android.ui.utilities.PermissionRequest;
 
 /**
- * Created by clive on 17/12/17.
+ * Created by Sarah on 17/12/17.
  */
 
 public class EditerActivity extends  AppCompatActivity implements PermissionRequest.Response {
